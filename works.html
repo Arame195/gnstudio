@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>GN PHOTO STUDIO</title>
+</head>
+
+<body>
+
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+    <label for="menu-icon"></label>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Գլխավոր</a></li>
+            <li><a href="#about">Մեր մասին</a></li>
+            <li><a href="#bron">Ամրագրել</a></li>
+            <li><a href="#contact-us">Կապ մեզ հետ</a></li>
+
+            <div class="lang-switch">
+                <li><button onclick="changeLanguage('hy')"> ARM 🇦🇲</button></li>
+                <li><button onclick="changeLanguage('ru')"> RUS 🇷🇺</button></li>
+                <li><button onclick="changeLanguage('en')"> ENG 🇺🇸 </button></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div id="drag-container">
+        <div id="spin-container">
+            <!-- Add your images (or video) here -->
+            <img src="https://images.unsplash.com/photo-1613068687893-5e85b4638b56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1618477247222-acbdb0e159b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1618477371303-b2a56f422d9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1508739826987-b79cd8b7da12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                alt="">
+        </div>
+        <div id="ground"></div>
+    </div>
+    <script src="3D-effect.js"></script>
+</body>
+
+</html>

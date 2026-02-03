@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hy">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GN PHOTO STUDIO</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+    <label for="menu-icon"></label>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Գլխավոր</a></li>
+            <li><a href="index.html#about">Մեր մասին</a></li>
+            <li><a href="index.html#wrapper">Ամրագրել</a></li>
+            <li><a href="index.html#contact-us">Կապ մեզ հետ</a></li>
+            <li><a href="works.html">Մեր աշխատանքները</a></li>
+
+            <div class="lang-switch">
+                <li><button onclick="changeLanguage('hy')"> Հայ 🇦🇲</button></li>
+                <li><button onclick="changeLanguage('ru')"> Рус 🇷🇺</button></li>
+                <li><button onclick="changeLanguage('en')"> Eng 🇺🇸 </button></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- HERO / SLIDER -->
+    <div class="swiper hero-slider">
+        <div class="hero-content">
+            <h1 id="hero-text">GN PHOTO STUDIO</h1>
+            <p data-i18n="GN">Ստեղծիր քո պատմությունը</p>
+            <a href="#wrapper" class="hero-btn" data-i18n="hero_btn">Ամրագրել</a>
+        </div>
+
+        <div class="swiper-wrapper" style="--delay: 0.1s">
+            <div class="swiper-slide">
+                <img src="photo1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="photo2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="photo3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- BANNER -->
+    <div class="banner reveal" style="--delay: 0.10s">
+        <div class="banner">
+            <p class="banner-text" data-i18n="banner_data">
+                GN photo studio.<br>
+                Քո ժպիտը՝ մեր լույսի ներքո
+            </p>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about reveal" style="--delay: 0.25s">
+        <section id="about">
+            <div class="container">
+                <div class="text-content">
+                    <h1 data-i18n="text_content">Մեր մասին</h1>
+                    <p data-i18n="data_text">
+                        Բարի գալուստ GN PHOTO STUDIO՝ ստեղծագործական մի անկյուն, որտեղ յուրաքանչյուր այցելու դառնում 
+                        է գլխավոր հերոս: Մեր ստուդիան հիմնադրվել է մեկ պարզ նպատակով՝ ցույց տալ աշխարհին, որ 
+                        յուրաքանչյուր մարդ, յուրաքանչյուր հայացք և յուրաքանչյուր ժպիտ ունի իր յուրահատուկ լույսը:
+
+                        Մենք մասնագիտացած ենք պրոֆեսիոնալ դիմանկարների, նորաձևության (fashion), ընտանեկան և 
+                        անհատական ֆոտոշարքերի մեջ: Օգտագործելով լավագույն տեխնիկան և ստեղծելով հարմարավետ միջավայր՝
+                        մենք օգնում ենք ձեզ լինել բնական, ազատ և ինքնավստահ: GN PHOTO STUDIO-ն այն վայրն է, որտեղ
+                        ձեր երազանքի կերպարները դառնում են իրականություն
+                    </p>
+                </div>
+
+                <div class="image-content">
+                    <img src="photo1.jpg" alt="Studio">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="block-line"></div>
+
+    <section id="wrapper">
+        <section class="wrapper">
+            <h1 data-i18n="GN">Ստեղծիր քո պատմությունը</h1>
+            <div class="cards">
+                <div class="card" data-effect="blur">
+                    <figure class="card__image">
+                        <img src="camon.jpg" alt="GN Photo Studio">
+                    </figure>
+
+                    <div class="card__header">
+                        <figure class="card__profile">
+                            <img src="logo.png" alt="GN Logo">
+                        </figure>
+                    </div>
+
+                    <div class="card__body">
+                        <h3 class="card__name">GN STUDIO (Հրազդան)</h3>
+                        <p class="card__job">Լուսանկարչական ստուդիա (Հրազդան)</p>
+                        <p class="card__bio">
+                            Պրոֆեսիոնալ լուսանկարչություն, վիդեո և ստեղծագործական նախագծեր։
+                        </p>
+                    </div>
+
+                    <div class="card__footer">
+                        <p class="card__date">© 2026</p>
+                        <a href="bron-hrazdan.html" class="card__btn">Դիտել ստուդիան</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="footer reveal" d style="--delay: 0.35s">
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="GN Photo Studio">
+                    <p>Minimal light space for your photoshoot</p>
+                </div>
+
+                <section id="contact-us" class="panel">
+                    <div class="panel__head">
+                        <h2 data-i18n="panel_data">Կապ մեզ հետ</h2>
+                        <p data-i18n="p_data">հարցերի դեպքում կապվեք մեզ հետ ձեզ հարմար տարբերակով.</p>
+                    </div>
+
+                    <div class="strip">
+                        <a class="trace" href="https://www.instagram.com/narkh_photography?igsh=MXJxa2ljZ2VmMDJhOA=="
+                            style="--c:#ff2d7d">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>Instagram</span>
+                            <span class="trace__spark"></span>
+                        </a>
+
+                        <a class="trace" href="mailto:Gnphotostudio1010@gmail.com" style="--c:#22c55e">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Email</span>
+                            <span class="trace__spark"></span>
+                        </a>
+
+                        <a class="trace" href="tel:+37494251861" style="--c:#1e3a8a">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Telephone</span>
+                            <span class="trace__spark"></span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
+
+    <div class="private reveal" style="--delay: 0.40s">
+        <div class="private">
+            <p data-i18n="private_data">© 2026 GN Photo Studio — Բոլոր իրավունքները պաշտպանված են</p>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
